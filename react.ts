@@ -24,8 +24,8 @@ function render(browser: boolean, savedData = createEmptySavedData()) {
     );
 }
 
-const isElectron = require('is-electron');
-const electron = isElectron();
+
+const electron = !!window.steal.loader._nodeRequire;
 if (electron) {
     try {
         const data: ISavedData = require('./data');

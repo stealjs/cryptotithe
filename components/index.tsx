@@ -1,4 +1,4 @@
-import * as classnames from 'classnames';
+import * as classNames from 'classnames';
 import * as React from 'react';
 import SortTrades from '../src/processing/SortTrades';
 import {
@@ -16,6 +16,8 @@ import { FileDownload, IFileDownloadProps } from './FileDownload';
 import Popup from './Popup';
 import { Settings } from './Settings';
 import { ViewTrades } from './ViewTrades';
+
+const classnames = classNames["default"];
 
 export interface IAppProps {
     savedData: ISavedData;

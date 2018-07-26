@@ -60,6 +60,7 @@
         "csvtojson": "^1.1.12",
         "font-awesome": "^4.7.0",
         "got": "^8.3.1",
+        "minimalistic-crypto-utils": "^1.0.1",
         "is-electron": "^2.1.0",
         "react": "^16.3.17",
         "react-dom": "^16.0.6",
@@ -68,6 +69,10 @@
         "validator": "^10.3.0"
     },
     "steal": {
-
+      "meta": {
+        "minimalistic-crypto-utils/lib/utils": {
+          "format": "cjs"
+        }
+      }
     }
 }
