@@ -28,7 +28,7 @@ function render(browser: boolean, savedData = createEmptySavedData()) {
 const electron = !!window.steal.loader._nodeRequire;
 if (electron) {
     try {
-        const data: ISavedData = require('./data');
+        const data: ISavedData = steal.loader._nodeRequire('./data');
         render(false, data);
     } catch (ex) {
         render(false);
